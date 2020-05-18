@@ -15,7 +15,7 @@
     "build:cp-examples": "rsync -a --include '*/' --include 'index.html' --exclude '*' example/ build/example",
     "build:markdown": "markdown-toc -i --bullets '—' README.md && sed -i -e 's/—/-/g' README.md && rm -f README.md-e",
     "####### Hooks #######": "",
-    "prepare": "cd example && yarn && cd .."
+    "prepare": "#cd example && npm ci && cd .."
   },
   "repository": {
     "type": "git",
